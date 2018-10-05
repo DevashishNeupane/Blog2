@@ -1,6 +1,22 @@
 {% extends 'crm/base.html' %}
 {% load staticfiles %}
 {% block content %}
+
+<style>
+   body {
+          background-color: lightcyan;
+         }
+    p {
+         color: blue;
+         font-family: cursive;
+       }
+     .col-md-12 {
+                 border: dotted;
+            }
+</style>
+
+
+
             {% if user.is_authenticated %}
                 <div class="page-container">
 
