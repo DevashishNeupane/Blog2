@@ -33,6 +33,7 @@ class CustomerList(admin.ModelAdmin):
     list_filter = ( 'cust_name', 'organization')
     search_fields = ('cust_name', )
     ordering = ['cust_name']
+    actions = [export_to_csv]
 
 
 class ServiceList(admin.ModelAdmin):
